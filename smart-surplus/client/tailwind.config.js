@@ -14,28 +14,28 @@ export default {
 		themes: [
 			{
 				smartlight: {
-					primary: '#6366f1',
-					secondary: '#10b981',
-					accent: '#f59e0b',
+					primary: '#ef4444',
+					secondary: '#f97316',
+					accent: '#22c55e',
 					neutral: '#1f2937',
-					'base-100': '#f7fafc',
+					'base-100': '#fff7ed',
 					info: '#38bdf8',
 					success: '#10b981',
 					warning: '#f59e0b',
-					error: '#ef4444'
+					error: '#dc2626'
 				}
 			},
 			{
 				smartdark: {
-					primary: '#6366f1',
-					secondary: '#10b981',
-					accent: '#f59e0b',
+					primary: '#ef4444',
+					secondary: '#fb923c',
+					accent: '#22c55e',
 					neutral: '#0b1220',
 					'base-100': '#0f172a',
 					info: '#38bdf8',
 					success: '#10b981',
 					warning: '#f59e0b',
-					error: '#ef4444'
+					error: '#f87171'
 				}
 			}
 		]
