@@ -10,10 +10,11 @@ body { font-family: Inter, system-ui, sans-serif; }
 /* Optional: background ambiance */
 :root {
   --hero-grad:
-    radial-gradient(1200px 600px at 20% -10%, rgba(99,102,241,.25), transparent 60%),
-    radial-gradient(1200px 600px at 80% -10%, rgba(16,185,129,.25), transparent 60%);
+    radial-gradient(1200px 600px at 20% -10%, rgba(239,68,68,.20), transparent 60%),
+    radial-gradient(1200px 600px at 80% -10%, rgba(249,115,22,.20), transparent 60%);
+  --food-bg: url('https://images.unsplash.com/photo-1543352634-87377a7e3e33?auto=format&fit=crop&w=1920&q=80');
 }
-body { background-image: var(--hero-grad); background-attachment: fixed; }
+body { background-image: var(--hero-grad), var(--food-bg); background-attachment: fixed, fixed; background-size: auto, cover; background-position: top left, center; }
 
 /* Glassmorphism helpers */
 .glass {
@@ -24,7 +25,15 @@ body { background-image: var(--hero-grad); background-attachment: fixed; }
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
   border-radius: 16px;
 }
-.glow { box-shadow: 0 0 0 0 rgba(99,102,241,.4); transition: box-shadow .25s ease, transform .25s ease; }
-.glow:hover { box-shadow: 0 10px 30px rgba(99,102,241,.25); transform: translateY(-2px); }
+.glow { box-shadow: 0 0 0 0 rgba(239,68,68,.35); transition: box-shadow .25s ease, transform .25s ease; }
+.glow:hover { box-shadow: 0 10px 30px rgba(239,68,68,.25); transform: translateY(-2px); }
 .skeleton-glass { background: linear-gradient(90deg, rgba(255,255,255,.06) 25%, rgba(255,255,255,.12) 37%, rgba(255,255,255,.06) 63%); background-size: 400% 100%; animation: shimmer 1.4s ease infinite; border-radius: 16px; }
 @keyframes shimmer { 0% {background-position: 100% 0} 100% {background-position: -100% 0} }
+
+/* Vibrant rounded button overrides */
+.btn { border-radius: 9999px; font-weight: 700; }
+.btn-primary { background-color: #ef4444; border-color: #ef4444; color: white; }
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-outline { border-color: #ef4444; color: #ef4444; }
+.btn-outline:hover { background-color: #ef4444; color: white; }
+.btn-ghost { color: #ef4444; }

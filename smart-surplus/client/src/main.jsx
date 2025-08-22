@@ -6,7 +6,7 @@ import './index.css'
 import App from './App.jsx'
 import { AuthProvider } from './state/auth.jsx'
  import { SocketProvider } from './state/socket.jsx'
-const saved = localStorage.getItem('theme') || 'smartdark';
+const saved = localStorage.getItem('theme') || 'smartlight';
 document.documentElement.setAttribute('data-theme', saved);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
