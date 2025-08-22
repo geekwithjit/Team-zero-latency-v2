@@ -20,7 +20,7 @@ function Navbar() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="navbar p-0 min-h-16">
           <div className="flex-1 gap-3 items-center">
-            <Link to="/" className="font-extrabold text-2xl tracking-tight text-primary">SmartSurplus</Link>
+            <Link to="/" className="font-extrabold text-2xl tracking-tight text-red-600">SmartSurplus</Link>
             <div className="hidden md:flex items-center flex-1">
               <div className="relative w-full">
                 <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 export default function ThemeToggle() {
-	const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'smartdark')
+	const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'smartlight')
 
 	useEffect(() => {
 		document.documentElement.setAttribute('data-theme', theme)
@@ -9,8 +9,8 @@ export default function ThemeToggle() {
 	}, [theme])
 
 	return (
-		<button className="btn btn-ghost btn-sm" onClick={() => setTheme(t => t === 'smartdark' ? 'smartlight' : 'smartdark')}>
-			{theme === 'smartdark' ? '☀️' : '🌙'}
+		<button className="btn btn-ghost btn-sm" onClick={() => setTheme(t => t === 'smartlight' ? 'smartdark' : 'smartlight')}>
+			{theme === 'smartlight' ? '🌙' : '☀️'}
 		</button>
 	)
 }

@@ -5,8 +5,8 @@ export default function Hero({ onSearch, value }) {
 		<section className="relative overflow-hidden">
 			<div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
 				<motion.h1 initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{duration:.5}}
-					className="text-4xl md:text-5xl font-extrabold tracking-tight">
-					Eat smart, save food, earn <span className="text-secondary">green points</span>
+					className="text-4xl md:text-5xl font-extrabold tracking-tight text-red-600">
+					Eat smart, save food, earn <span className="text-primary">green points</span>
 				</motion.h1>
 				<p className="text-gray-400 mt-3 max-w-2xl">Discover surplus food across campus with real‑time alerts and hot deals.</p>
 				<div className="mt-6 glass p-2">
